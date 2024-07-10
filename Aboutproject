@@ -1,0 +1,23 @@
+
+
+
+This code is a simple implementation of a Tic Tac Toe game in C++,
+        where two     players (X and O) take turns entering their moves until one of them wins or
+        the game ends in a draw
+
+
+
+
+board: This array represents the Tic Tac Toe board with 9 cells initialized to empty spaces (' ') indicating no player has made a move there yet.
+get_x_player_choice() and get_o_player_choice(): Functions where players enter their moves (X and O respectively).
+player_vs_player(): Main game function where players are alternated, moves are validated, the board is displayed, and the game status is checked.
+count_board(char symbol): Counts the occurrences of a specific symbol ('X' or 'O') on the board.
+check_winner(): Checks if there is a winner based on the current board configuration. 
+show_board(): Displays the currency state of the board.
+ main() function the user to enter "start" to begin the game. If the input matches "start",
+player_vs_player() function is called to start the game. Otherwise, an error message is displayed.
+player_vs_player() handles the gameplay loop between two players. It prompts each player for their name, clears the screen, displays the board, and alternates turns between X and O players based on the number of moves made (count_board()).
+After each move, it checks for a winner (check_winner()). 
+If a winner is found ('X' or 'O'), it displays a congratulatory message and ends the game.
+If there are no winners and the board is full ('D' for draw),
+ it announces the game is a draw and ends.
